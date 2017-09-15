@@ -12,7 +12,7 @@
         alert('Nic nie wybrałes')
     }
 }*/
-var elWybor = document.getElementById("wyborpi");
+/*var elWybor = document.getElementById("wyborpi");
 var elWybornic = document.getElementById("wybornic");
 var elBlok = document.getElementById("blok");
 
@@ -45,3 +45,33 @@ var zaokraglenie = Math.round(a);
 var zaokraglenie = Math.round(b);
 console.log(zaokraglenie);
 
+var zaokragleniemin = (Math.round(minimalana));
+console.log(zaokragleniemin);*/
+
+/*var x = -56;
+var y = 13.1;
+var z = 14.9;
+document.write('<br>' + Math.abs(x));
+document.write('<br>' + Math.abs(y));
+document.write('<br>' + Math.abs(z));
+document.write('<br>');
+document.write('<br>' + Math.round(x));
+document.write('<br>' + Math.round(y));
+document.write('<br>' + Math.round(z));
+document.write('<br>');
+
+document.write('<br>' + Math.floor(x));
+document.write('<br>' + Math.floor(y));
+document.write('<br>' + Math.floor(z));
+document.write('<br>');
+
+var p = Math.pow(2,10);
+console.log(p);
+var losuj = Math.random();
+console.log(losuj);
+document.write('<br>');
+
+
+//losuj z przedziału(0;10);
+var losuj2 = (Math.floor(Math.random() * 11));
+console.log(losuj2);*/
