@@ -76,6 +76,7 @@ document.write('Podałes poprawne wartości: <br> ' + "x:" + x + "<br> " + 'y:' 
 //podaj 5 liczb podzielnych przez 2 z klawiatury zapisz je do tablicy i wyświetl je w konsoli
 
 
+/*
 var podzielne = [];
 var x;
 for(i=0; i<5; i++){
@@ -88,13 +89,109 @@ for(i=0; i<5; i++){
 
     }
 console.log(podzielne);
+*/
+
+//użytkownik podaje z klawiatury liczbe zabezpiecz przed podaniem litery, znaku specjalnego ma byc pytany tak długo az poda liczbe
+// sprawdzamy czy dana wartosc jest liczba moza równies użyc isNAN i zanegowac
+/*
+document.write('<input type="text"  id="liczba">');
+document.write('<button id="przycisk">Wyślij</button>');
+var elPrzycisk = document.getElementById('przycisk');
+var elLiczba = document.getElementById('liczba');
+
+elPrzycisk.onclick = function(){
+    elLiczba = document.getElementById('liczba');
+    var wartosc = elLiczba.value;
+    if(Number(wartosc)){
+    console.log(wartosc);
+
+    }
+}
+*/
+
+
+// program wyswietlajacy liczby od 1 - 10 w 5 rzedach po każdej liczbie ma byc przecinek a pokazdym rzedzie kropka
 
 
 
+/*
+for (var j=0; j<5; j++){
+    for (var i=1; i<11; i++){
+
+    document.write(i + ",");
+}
+document.write(i + ".<br>");
+
+}
+
+*/
+
+/*var g ="";
+for(i = 0; i < 5; i++){
+    g +='*';
+    document.write(g + '<br>');
+
+}*/
+
+/*for(var i = 1; i <6; i++){
+for(var j = 1; j <i ; j++){
+
+    document.write(i);
+}
+    document.write("<br>")
+}*/
+// podaj maksymalna ilosc gwiazdek zrob petle w której zabezpieczysz przed podaniem błednych danych
 
 
+/*
+var i = 0;
+do {
+
+    i = prompt("podaj ilosc");
+
+}while(isNaN(i) || < 0)
+
+    for (var j = 1; j <=i; j++){
+for(var k = 1; k <= j ; k++){
+        document.write("*");
+    }
+document.write("<br>")
+}
+*/
 
 
+//użytkownik podaje login i gasło w
 
+/*
+var elLogin = document.getElementById('login');
+var elPas = document.getElementById('pas');
+var elPrzycisk = document.getElementById('przycisk');
+var elBlok = document.getElementById('blok');
+
+elPrzycisk.onclick = function(){
+var login = elLogin.value;
+var pas = elPas.value;
+if (login == 'admin' && pas == 'tajne@123'){
+elBlok.style.color = 'red';
+    elBlok.innerHTML = "poprawne hasło";
+    }
+
+}
+    */
+
+var tab = ["ania", "frania", "gienia"];
+for (var i = 0; i<=tab.lenght - 1; i++) {
+    document.log(tab[i] + ', ');
+}
+
+
+function pokaz(wartosc, indeks, br){
+    document.write(indeks + 1 + ' - element tablicy wynosi: ');
+    document.write("<strong>" + wartosc + "</strong>");
+    document.write("<br>");
+
+}
+
+tab.forEach(pokaz);
 
 
