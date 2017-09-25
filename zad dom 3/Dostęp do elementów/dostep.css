@@ -1,0 +1,46 @@
+*{
+    font size:20px; 
+    list-style:none;
+    text-decoration: none;
+}
+.czerwony {
+    background-color: #D4062F;
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #D9A0AB;
+    text-align: center;
+    list-style:none;
+    
+}
+.zielony {
+    background-color: #60B40C;
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #D9A0AB;
+    text-align: center;
+    
+}
+.grey {
+    background-color: #626262;
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #D9A0AB;
+    text-align: center;
+    
+}
+.blue {
+    background-color: #060a64;
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #D9A0AB;
+    text-align: center;
+    
+}

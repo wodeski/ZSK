@@ -1,3 +1,4 @@
+/*
 
 var elPierwszy = document.getElementById('pierwszy');
 elPierwszy.className = "zielony";
@@ -34,6 +35,7 @@ elTv.className = 'czerwony';
 
 ;
 
+/*
 
 function przycisk(){
 
@@ -56,9 +58,27 @@ elPrzycisk.onclick() = function(){
     elTv = document.getElementsByTagName('tv')
 
 }
+*/
+/*function przycisk(){
 
+        var elTvAll = document.querySelectorAll('li.gray');
+console.log(elTvAll);
+console.log(elTvAll.length);
+
+
+     for(var i=0; i<elTvall.length; i++){
+
+           elTvall[i] = 'zielony';*/
+
+var elPrzycisk = document.getElementById('przycisk');
+elPrzycisk.onclick() = function(){
+     elKs = document.getElementsByTagName('sport');
+
+function zmien(element, index){
+
+        elKs[index].className = 'zielony';
 }
-
+    elKs.forEach(zmien);
 
 
 
