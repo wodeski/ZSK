@@ -1,0 +1,38 @@
+body{
+    font-size: 15px;
+
+
+}
+
+
+.czerwony{ background-color: #d4062f;
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #d9a0ab;
+    text-align: center;
+    list-style-type: none;
+}
+.zielony{
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #0fffd0;
+    text-align: center;
+    list-style-type: none;
+    background-color: #00ff00
+}
+.gray{
+    color:aliceblue;
+    width:25%;
+    border:solid;
+    border-style: ridge;
+    border-color: #0fffd0;
+    text-align: center;
+    list-style-type: none;
+    background-color: rgba(134, 142, 74, 0.83);
+
+
+}

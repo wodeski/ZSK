@@ -179,7 +179,7 @@ elBlok.style.color = 'red';
 }
     */
 
-var tab = ["ania", "frania", "gienia"];
+/*var tab = ["ania", "frania", "gienia"];
 for (var i = 0; i<=tab.lenght - 1; i++) {
     document.log(tab[i] + ', ');
 }
@@ -192,6 +192,17 @@ function pokaz(wartosc, indeks, br){
 
 }
 
-tab.forEach(pokaz);
+tab.forEach(pokaz);*/
 
 
+var liczba = 3.123456789;
+var nowa = liczba.toFixed(2); //3.12 ilosc miejsc po przecinku
+console.log(nowa);
+
+var nowa1 = liczba.toPrecision(4);// łaczna ilosc wraz z liczbą przed przecinkiem
+console.log(nowa1);
+var suma =nowa + nowa1;
+console.log(suma);
+var iloczyn =nowa * nowa1;
+console.log(iloczyn);
+console.log(typeof(iloczyn));
