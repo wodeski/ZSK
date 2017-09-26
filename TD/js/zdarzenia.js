@@ -43,27 +43,34 @@ imie.onblur = function(){
     }
 }
 imie.addEventListener('blur', sprawdz);*/
-function sprawdz(){
-        var element = document.getElementById(this.id);
-    if(element.value.length > 2 && element.value.length < 10){
+function sprawdz (){
+        //var element = document.getElementById(this.id);
+    if(this.value.length > 2 && this.value.length < 10){
     blok.textContent = '';
 }else{
     blok.textContent = "Błedne dane";
-    element.focus();
+    this.focus();
+    }
 }
-}
-function mail(){
+
+
+function mail (){
 
     if(mail1.value != mail2.value){
         blok.textContent = "Adresy poczty są różne";
         mail1.value = '';
         mail2.value = '';
         mail1.focus();
+        mail2.disabled = true;
 
 
-    }else{
 
-
+}
+    else{
+    mail1.disabled = true;
+    mail2.disabled = true;
+    blok.textContent = '';
+        }
 
     }
 
@@ -71,7 +78,71 @@ function mail(){
 
 
 
+function blokuj (){
+    mail2.disabled = false;
+    mail2.focus();
+
+
+}
+function blokuj2 (){
+    pass2.disabled = false;
+    pass2.focus();
+
+
+}
+function haslo (){
+    if (pass1.value != pass2.value){
+        blok.textContent = "Hasła są różne!";
+        pass1.value = '';
+        pass2.value = '';
+        pass1.focus();
+        pass2.disabled = true;
+
+
+
+}else{
+    pass1.disabled = true;
+    pass2.disabled = true;
+    blok.textContent = '';
+}
+
+
+
         }
+regulamin.onclik = function(){
+    if(regulamin.checked == true){
+    przycisk.disable = false;
+}
+    else{ przycisk.disabled= true
+        }
+}
+
+
+function poprawto() {
+    var blokowanie = document.getElementsByTagName('input');
+    for (var i = 0; i < blokowanie.length; i++){
+        if(blokowanie[i].disabled == true){
+            blokowanie[i].disabled = false;
+        }
+    }
+}
+
+
+
+
+
+
+przycisk.onclick
+
+
+
 imie.addEventListener('blur', sprawdz);
 nazwisko.addEventListener('blur', sprawdz);
 login.addEventListener('blur', sprawdz);
+mail1.addEventListener('blur', blokuj);
+mail2.addEventListener('blur', mail);
+pass1.addEventListener('blur', blokuj2);
+pass2.addEventListener('blur', haslo);
+//regulamin.addEventListener('click', regulamin);
+regulamin.addEventListener('change', regulamin);
+popraw.addEventListener('click', poprawto);

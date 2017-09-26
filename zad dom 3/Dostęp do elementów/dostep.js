@@ -99,9 +99,10 @@ ostatni.setAttribute('class', 'grey');
 
 
 
-var text = document.getElementsByTagName('input')[0];
+/*var text = document.getElementsByTagName('input')[0];
 console.log(text);
 text.value = 'Wyślij';
 //text.setAttribute('type', 'button');
 var link = document.getElementById('link');
-link.setAttribute('href', 'http://zsk.poznan.pl/')
+link.setAttribute('href', 'http://zsk.poznan.pl/');*/
+
